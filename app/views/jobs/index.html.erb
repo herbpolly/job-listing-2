@@ -12,9 +12,9 @@
    </li>
    <li>
      <%= link_to("按照发表时间排序", jobs_path ) %>
-   </li>
- </ul>
-</div>
+     </li>
+   </ul>
+ </div>
 
 <table class="table table-boldered">
    <thead>
@@ -29,6 +29,8 @@
    </thead>
    <tbody>
     <% @jobs.each do |job| %>
+
+
     <tr>
       <td>
          <%= link_to(job.title, job_path(job)) %>

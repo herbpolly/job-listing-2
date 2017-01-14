@@ -60,6 +60,8 @@ class Admin::JobsController < ApplicationController
     redirect_to :back
   end
 
+  
+
   private
 
   def job_params
