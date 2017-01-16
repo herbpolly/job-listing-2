@@ -31,8 +31,9 @@
 
   <% @jobs.each do |job| %>
   <tr>
+
     <td>
-     <%= link_to(job.resumes.court, admin_job_resumes_path(job)) %>
+     <%= link_to(job.resumes.count, admin_job_resumes_path(job)) %>
     </td>
 
     <td>
